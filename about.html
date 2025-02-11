@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title> About | Nolux LTD</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <meta name="google-adsense-account" content="ca-pub-6042844623010896">
+  
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+
+  <style>
+    .profile-img-container {
+      position: relative;
+      display: inline-block;
+      border-radius: 10px;
+      overflow: hidden;
+    }
+    
+    .profile-img {
+      width: 100%;
+      transition: transform 0.3s ease-in-out;
+    }
+    
+    .social-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: rgba(0, 0, 0, 0.6);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 15px;
+      opacity: 0;
+      transition: opacity 0.3s ease-in-out;
+    }
+    
+    .social-icon {
+      color: #fff;
+      font-size: 24px;
+      text-decoration: none;
+      transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
+    }
+    
+    .social-icon:hover {
+      transform: scale(1.2);
+      color: #64ABC0;
+    }
+    
+    .profile-img-container:hover .social-overlay {
+      opacity: 1;
+    }
+    
+    .profile-img-container:hover .profile-img {
+      transform: scale(1.05);
+    }
+    </style>
+     
+
+
+
+</head>
+
+<body class="about-page">
+
+  <header id="header" class="header d-flex align-items-center fixed-top">
+    <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
+        <!-- Dual logos for scroll transition -->
+    <a href="index.html" class="logo d-flex align-items-center">
+      <!-- White Logo (default) -->
+      <img id="logo-white" src="assets/img/logo-white.png" alt="Nolux White Logo" style="display: block;">
+      <!-- Black Logo (hidden initially) -->
+      <img id="logo-black" src="assets/img/logo.png" alt="Nolux Black Logo" style="display: none;">
+    </a>
+
+    
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html" class="active">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="FAQs.html">FAQs</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+    
+    
+
+    </div>
+
+  </header>
+
+<!-- JavaScript for scrolling -->
+<script>
+  window.addEventListener('scroll', function() {
+    const header = document.getElementById('header');
+    const logoWhite = document.getElementById('logo-white');
+    const logoBlack = document.getElementById('logo-black');
+
+    if (window.scrollY > 50) {
+      header.classList.add('scrolled');
+      logoWhite.style.display = 'none'; // Hide white logo
+      logoBlack.style.display = 'block'; // Show black logo
+    } else {
+      header.classList.remove('scrolled');
+      logoWhite.style.display = 'block'; // Show white logo
+      logoBlack.style.display = 'none'; // Hide black logo
+    }
+    });
+</script>
+
+  <main class="main">
+
+    <!-- Page Title -->
+    <div class="page-title dark-background" style="background-image: url(assets/img/page-title-bg.jpg);">
+      <div class="container position-relative">
+        <h1>About</h1>
+        <nav class="breadcrumbs">
+          <ol>
+            <li><a href="index.html">Home</a></li>
+            <li class="current">About</li>
+          </ol>
+        </nav>
+      </div>
+    </div><!-- End Page Title -->
+    
+<!-- Welcome/Introduction Section -->
+<section id="welcome" class="welcome section py-5">
+  <div class="container">
+    <div class="row align-items-center position-relative">
+      <!-- Left: Video and Image -->
+      <div class="col-lg-6 text-center" data-aos="zoom-out" data-aos-delay="200">
+        <img src="assets/img/home/welcome.jpg" alt="Welcome to Nolux Ltd" class="img-fluid rounded mb-4" loading="lazy">
+        <div class="watch-video d-flex align-items-center justify-content-center">
+          <i class="bi bi-play-circle fs-1 text-primary me-3"></i>
+          <a href="https://youtu.be/yq6zJ9wEUQ4" class="glightbox stretched-link">Watch Our Company Profile</a>
+        </div>
+      </div>
+      <!-- Right: Text Content -->
+      <div class="col-lg-6" data-aos="fade-up">
+        <h2 class="fw-bold">Welcome to Nolux Ltd</h2>
+        <p>At Nolux Ltd, we pride ourselves on connecting exceptional talent with extraordinary opportunities. With expertise in recruitment, HR consultation, and workforce solutions, we ensure that businesses and jobseekers alike achieve their goals efficiently and effectively.</p>
+        <p class="mt-3">Join us on a journey where talent meets opportunity, and partnerships create success.</p>
+      </div>
+    </div>
+  </div>
+</section><!-- /Welcome/Introduction Section -->
+
+<!-- Our Story Section -->
+<section id="our-story" class="our-story section py-5 light-background">
+  <div class="container">
+    <div class="section-title text-center" data-aos="fade-up">
+      <h2>Our Story</h2>
+      <p>The journey of Nolux Ltd.</p>
+    </div>
+    <div class="row align-items-center">
+      <div class="col-lg-6" data-aos="fade-up">
+        <img src="assets/img/home/our-story.jpg" alt="Our Story" class="img-fluid rounded" loading="lazy">
+      </div>
+      <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+        <p>Founded with a vision to bridge the gap between exceptional talent and organizational goals, Nolux Ltd has grown into a trusted partner for businesses and professionals across industries. Our dedication to quality, integrity, and innovation drives us to deliver unparalleled recruitment and HR solutions that make a difference.</p>
+        <p>Our name, Nolux, is derived from the French word for black, "noir," and the concept of flux, or change, representing our commitment to adaptability and dynamism. This unique name embodies our vision to transform the recruitment landscape while remaining versatile to the needs of our clients and jobseekers.</p>
+      </div>
+    </div>
+  </div>
+</section><!-- /Our Story Section -->
+
+<!-- Mission, Vision, and Core Values Section -->
+<section id="mission-vision" class="mission-vision section light-background py-5">
+  <div class="container section-title" data-aos="fade-up">
+    <h2 class="fw-bold">Our Mission, Vision, and Core Values</h2>
+    <p class="text-muted">Guiding principles for clients and jobseekers alike.</p>
+  </div>
+  <div class="container">
+    <div class="row gy-4 align-items-center">
+      <!-- Mission -->
+      <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+        <img src="assets/img/home/mission.jpg" class="img-fluid rounded" alt="Mission" loading="lazy">
+      </div>
+      <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+        <h3 class="fw-bold">Our Mission</h3>
+        <p><strong>For Clients:</strong> To provide innovative, tailored workforce solutions that empower businesses to achieve their objectives.</p>
+        <p><strong>For Jobseekers:</strong> To connect professionals with opportunities that align with their skills, ambitions, and values.</p>
+      </div>
+    </div>
+    <div class="row gy-4 mt-4 align-items-center">
+      <!-- Vision -->
+      <div class="col-lg-6 order-lg-2" data-aos="fade-up" data-aos-delay="300">
+        <img src="assets/img/home/our-vision.jpg" class="img-fluid rounded" alt="Vision" loading="lazy">
+      </div>
+      <div class="col-lg-6 order-lg-1" data-aos="fade-up" data-aos-delay="400">
+        <h3 class="fw-bold">Our Vision</h3>
+        <p><strong>For Clients:</strong> To be the go-to partner for businesses seeking transformative recruitment and HR strategies.</p>
+        <p><strong>For Jobseekers:</strong> To redefine career success by bridging the gap between talent and opportunity.</p>
+      </div>
+    </div>
+    <div class="row gy-4 mt-4 align-items-center">
+      <!-- Core Values -->
+      <div class="col-lg-6" data-aos="fade-up" data-aos-delay="500">
+        <img src="assets/img/home/our-values.jpg" class="img-fluid rounded" alt="Core Values" loading="lazy">
+      </div>
+      <div class="col-lg-6" data-aos="fade-up" data-aos-delay="600">
+        <h3 class="fw-bold">Core Values</h3>
+        <ul class="list-unstyled">
+          <li class="mb-2"><i class="bi bi-check-circle"></i><strong>Integrity:</strong> Upholding honesty and ethics in all our engagements.</li>
+          <li class="mb-2"><i class="bi bi-check-circle"></i><strong>Innovation:</strong> Leveraging creative solutions to solve workforce challenges.</li>
+          <li class="mb-2"><i class="bi bi-check-circle"></i><strong>Adaptability:</strong> We evolve with changing market needs to deliver agile and effective solutions.</li>
+          <li class="mb-2"><i class="bi bi-check-circle"></i><strong>Excellence:</strong> Striving for the highest quality in everything we do.</li>
+          <li><i class="bi bi-check-circle "></i><strong>Collaboration:</strong> Building strong partnerships with clients and candidates.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section><!-- /Mission, Vision, and Core Values Section -->
+
+
+<!-- What We Do Section -->
+<section id="what-we-do" class="what-we-do section py-5 light-background">
+  <div class="container">
+    <div class="section-title text-center" data-aos="fade-up">
+      <h2 class="fw-bold">What We Do</h2>
+      <p class="text-muted">Our services tailored to meet your needs.</p>
+    </div>
+    <div class="container">
+
+      <div class="row gy-4">
+
+        <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+          <div class="service-item  position-relative">
+            <div class="icon">
+              <i class="fas fa-users"></i>
+            </div>
+            <h3>Recruitment</h3>
+            <p>We connect exceptional talent with organizations, driving growth and success.</p>
+          </div>
+        </div><!-- End Service Item -->
+
+        <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+          <div class="service-item position-relative">
+            <div class="icon">
+              <i class="fas fa-user-tie"></i>
+            </div>
+            <h3>Executive Search</h3>
+            <p>Our specialized search services identify top-tier leadership to propel your business forward.</p>
+          </div>
+        </div><!-- End Service Item -->
+
+        <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+          <div class="service-item position-relative">
+            <div class="icon">
+              <i class="fas fa-clipboard-check"></i>
+            </div>
+            <h3>Human Resource services & Consultation</h3>
+            <p>Expert advice on workforce management, operational efficiency, and organizational development.</p>
+          </div>
+        </div><!-- End Service Item -->
+
+        <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
+          <div class="service-item position-relative">
+            <div class="icon">
+              <i class="fas fa-briefcase"></i>
+            </div>
+            <h3>Outsourcing Services</h3>
+            <p>Streamline your operations by entrusting HR functions to our expert team, allowing you to focus on your core business priorities.</p>
+          </div>
+        </div><!-- End Service Item -->
+
+        <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="500">
+          <div class="service-item position-relative">
+            <div class="icon">
+              <i class="fas fa-graduation-cap"></i>
+            </div>
+            <h3>Training & Development</h3>
+            <p>Empower your workforce with tailored training programs and development initiatives designed to enhance skills and drive innovation.</p>
+          </div>
+        </div><!-- End Service Item -->
+
+      </div>
+    </div>
+</section><!-- /What We Do Section -->
+
+<!-- Why Choose Us Section -->
+<section id="why-choose-us" class="why-choose-us section py-5">
+  <div class="container">
+    <div class="section-title text-center" data-aos="fade-up">
+      <h2 class="fw-bold">Why Choose Nolux</h2>
+      <p class="text-muted">Experience the difference with our tailored solutions.</p>
+    </div>
+    <div class="row gy-4">
+
+      <!-- Client-Centric Approach -->
+      <div class="col-lg-4" data-aos="fade-up">
+        <div class="card border-0 shadow-sm h-100">
+          <img src="assets/img/home/Client-Centric-Approach.jpg" alt="Client-Centric Approach" class="card-img-top rounded-top" loading="lazy">
+          <div class="card-body">
+            <h3 class="fw-bold">Client-Centric Approach</h3>
+            <p>We take the time to understand your challenges and goals, ensuring our solutions align with your business objectives.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Strategic Partnerships -->
+      <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
+        <div class="card border-0 shadow-sm h-100">
+          <img src="assets/img/home/Strategic-Partnerships.jpg" alt="Strategic Partnerships" class="card-img-top rounded-top" loading="lazy">
+          <div class="card-body">
+            <h3 class="fw-bold">Strategic Partnerships</h3>
+            <p>We collaborate with businesses, industry leaders, and professionals to create mutually beneficial partnerships that drive growth, enhance opportunities, and foster innovation.</p>
+          </div>
+        </div>
+      </div>
+
+        <!-- Innovative Solutions -->
+        <div class="col-lg-4" data-aos="fade-up" data-aos-delay="300">
+          <div class="card border-0 shadow-sm h-100">
+            <img src="assets/img/home/Innovative-Solutions.jpg" alt="Innovative Solutions" class="card-img-top rounded-top" loading="lazy">
+            <div class="card-body">
+              <h3 class="fw-bold">Innovative Solutions</h3>
+              <p>We leverage technology, data-driven insights, and creative problem-solving to optimize talent acquisition, workforce planning, and HR operations.</p>
+            </div>
+          </div>
+        </div>
+
+          <!-- Agile & Adaptive Approach -->
+      <div class="col-lg-4" data-aos="fade-up" data-aos-delay="400">
+        <div class="card border-0 shadow-sm h-100">
+          <img src="assets/img/home/Agile-Adaptive-Approach.jpg" alt="Agile & Adaptive Approach" class="card-img-top rounded-top" loading="lazy">
+          <div class="card-body">
+            <h3 class="fw-bold">Agile & Adaptive Approach</h3>
+            <p>Markets and workforce demands are constantly shifting. Our flexible, forward-thinking approach ensures we remain responsive and effective in delivering solutions that match industry trends.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Quality Assurance -->
+      <div class="col-lg-4" data-aos="fade-up" data-aos-delay="500">
+        <div class="card border-0 shadow-sm h-100">
+          <img src="assets/img/home/Quality-Assurance.jpg" alt="Quality Assurance" class="card-img-top rounded-top" loading="lazy">
+          <div class="card-body">
+            <h3 class="fw-bold">Quality Assurance</h3>
+            <p>We maintain rigorous screening, evaluation, and compliance processes to ensure that every placement meets industry standards and client expectations.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section><!-- /Why Choose Us Section -->
+
+<!-- Leadership Profile Section -->
+<section id="leadership" class="leadership section py-5 light-background">
+  <div class="container">
+    <div class="section-title text-center" data-aos="fade-up">
+      <h2>Meet the Managing Director</h2>
+      <p>Get to know the visionary behind Nolux Ltd.</p>
+    </div>
+    <div class="row align-items-center justify-content-center">
+      <div class="col-lg-4 text-center position-relative" data-aos="fade-up">
+        <div class="profile-img-container">
+          <img src="assets/img/md-profile.jpg" alt="Managing Director" class="img-fluid rounded shadow-md profile-img" loading="lazy">
+          <div class="social-overlay">
+            <a href="https://facebook.com/kline.oware" target="_blank" class="social-icon"><i class="bi bi-facebook"></i></a>
+            <a href="https://linkedin.com/in/kline-oware" target="_blank" class="social-icon"><i class="bi bi-linkedin"></i></a>
+            <a href="https://t.me/klineoware" target="_blank" class="social-icon"><i class="bi bi-telegram"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-8" data-aos="fade-up" data-aos-delay="200">
+        <blockquote class="blockquote">
+          <p class="fst-italic">"At Nolux Ltd, we believe in the power of people and innovative HR solutions to transform businesses."</p>
+        </blockquote>
+        <h4 class="mt-3">Kline Oware</h4>
+        <p><strong>Founder and Managing Director</strong></p>
+        <p>With a diverse professional background spanning operations and leadership, Kline Oware brings a strategic and hands-on approach to recruitment and HR consulting. He understands the complexities of workforce management and business growth. His vision for Nolux Ltd is rooted in efficiency, innovation, and a commitment to connecting top talent with the right opportunities.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Our Commitment Section -->
+<section id="commitment" class="commitment section py-5">
+  <div class="container">
+    <div class="section-title text-center" data-aos="fade-up">
+      <h2 class="fw-bold">Our Commitment to You</h2>
+      <p class="text-muted">Your success is our priority, step by step.</p>
+    </div>
+    <div class="row">
+      <!-- Step 1: For Clients -->
+      <div class="col-lg-6 mb-4" data-aos="fade-right">
+        <div class="bg-light p-4 rounded shadow-sm position-relative">
+          <div class="step-icon text-primary position-absolute top-0 start-50 translate-middle bg-white border shadow-sm p-3">
+            <h3 class="m-0 fw-bold">1</h3>
+          </div>
+          <h3 class="fw-bold mt-5 pt-3">For Clients</h3>
+          <p>We are dedicated to delivering exceptional recruitment and HR solutions that empower businesses to reach their goals. From sourcing top talent to optimizing workforce strategies, we prioritize your success.</p>
+          <img src="assets/img/home/commitment.jpg" alt="Commitment to Clients" class="img-fluid rounded shadow mt-3" loading="lazy">
+        </div>
+      </div>
+      <!-- Step 2: For Jobseekers -->
+      <div class="col-lg-6 mb-4" data-aos="fade-left">
+        <div class="bg-light p-4 rounded shadow-sm position-relative">
+          <div class="step-icon text-primary position-absolute top-0 start-50 translate-middle bg-white border shadow-sm p-3">
+            <h3 class="m-0 fw-bold">2</h3>
+          </div>
+          <h3 class="fw-bold mt-5 pt-3">For Jobseekers</h3>
+          <p>At Nolux Ltd, we understand the importance of finding the right role. That’s why we go above and beyond to connect jobseekers with opportunities that align with their skills, ambitions, and values.</p>
+          <img src="assets/img/home/commitment-jobseeker.jpg" alt="Commitment to Jobseekers" class="img-fluid rounded shadow mt-3" loading="lazy">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /Our Commitment Section -->
+
+
+
+<!-- Future Goals Section -->
+<section id="future-goals" class="future-goals section py-5 light-background">
+  <div class="container">
+    <div class="section-title text-center" data-aos="fade-up">
+      <h2 class="fw-bold">Our Future Goals</h2>
+      <p class="text-muted">Charting a course for growth and innovation.</p>
+    </div>
+    <div class="container">
+      <div class="row align-items-center">
+        <!-- Image Placeholder -->
+        <div class="col-lg-6 mb-4" data-aos="fade-right">
+          <img src="assets/img/home/future-goals-placeholder.jpg" alt="Future Goals" class="img-fluid rounded shadow" loading="lazy">
+        </div>
+        <!-- Content -->
+        <div class="col-lg-6" data-aos="fade-left">
+          <p>At Nolux Ltd, we are constantly looking to the future, exploring new ways to enhance our services and expand our reach. Our goals include:</p>
+          <ul class="list-unstyled">
+            <li class="mb-2"><i class="bi bi-check-circle"></i>Establishing a global presence to serve clients and jobseekers worldwide.</li>
+            <li class="mb-2"><i class="bi bi-check-circle"></i>Developing innovative HR technologies to streamline recruitment processes.</li>
+            <li class="mb-2"><i class="bi bi-check-circle"></i>Building partnerships with organizations across diverse industries.</li>
+            <li><i class="bi bi-check-circle"></i>Empowering professionals through advanced training and development programs.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section><!-- /Future Goals Section -->
+
+
+<!-- Call to Action Section -->
+<section id="cta" class="cta section py-5 text-center">
+  <div class="container" data-aos="fade-up">
+    <h2 class="fw-bold">Ready to Transform Your Workforce?</h2>
+    <p>Contact Nolux Ltd today to find out how we can help you achieve your goals.</p>
+    <a href="contact.html" class="btn btn-primary mt-3">Get in Touch</a>
+  </div>
+</section><!-- /Call to Action Section -->
+
+  </main>
+
+  <footer id="footer" class="footer dark-background">
+
+    <div class="container footer-top">
+      <div class="row gy-4">
+        <div class="col-lg-4 col-md-6 footer-about">
+          <a href="index.html" class="logo d-flex align-items-center">
+          <img src="assets/img/logo-white2.png">
+           </a>
+           <em>Empowering organizations and talent to achieve excellence.</em>
+          <div class="footer-contact pt-3">
+            <p>Crocodile Lane, Pokuase</p>
+            <p>Accra, Ghana</p>
+            <p class="mt-3"><strong>Office:</strong> <span>+233 53 369 9288</span></p>
+            <strong>Phone:</strong> <span>+233 59 893 4058</span></p>
+            <p><strong>Email:</strong> <span>info@noluxltd.net</span></p>
+          </div>
+          <div class="social-links d-flex mt-4">
+            <a href="https://twitter.com/NoluxLtd"><i class="bi bi-twitter-x"></i></a>
+            <a href="https://web.facebook.com/people/Nolux-LTD/100090466088576/?_rdc=1&_rdr#"><i class="bi bi-facebook"></i></a>
+            <a href="https://www.instagram.com/noluxltd"><i class="bi bi-instagram"></i></a>
+            <a href="https://gh.linkedin.com/company/nolux-ltd"><i class="bi bi-linkedin"></i></a>
+            <a href="https://whatsapp.com/channel/0029VaDSGc6CnA7sLGRJaP3n"><i class="bi bi-whatsapp"></i></a>
+            <a href="https://t.me/noluxltd"><i class="bi bi-telegram"></i></a>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-3 footer-links">
+          <h4>Useful Links</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About us</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="FAQs.html">FAQs</a></li>
+            <li><a href="Terms-of-Service.html">Terms of service</a></li>
+            <li><a href="Privacy-policy.html">Privacy policy</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-4 col-md-3 footer-links">
+          <h4>Our Services</h4>
+          <ul>
+            <li><a href="Recruitment.html">Recruitment</a></li>
+            <li><a href="Executive-search.html">Executive Search</a></li>
+            <li><a href="HR-Services-Consultation.html">HR Services & Consultation</a></li>
+            <li><a href="Outsourcing.html">Outsourcing</a></li>
+            <li><a href="Training-Development.html">Training & Development</a></li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="container copyright text-center mt-4">
+      <p>© <span>Copyright</span> <strong class="px-1 sitename">Nolux LTD</strong> <span>All Rights Reserved</span></p>
+      <div class="credits">
+        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+      </div>
+    </div>
+
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
